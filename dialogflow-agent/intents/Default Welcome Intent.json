@@ -1,5 +1,5 @@
 {
-  "id": "720a728b-497e-4a54-ae5f-c12596612cc2",
+  "id": "2597e1a5-f246-4ba7-993f-2157f5b8dec5",
   "name": "Default Welcome Intent",
   "auto": true,
   "contexts": [],
@@ -13,17 +13,27 @@
         {
           "type": 0,
           "lang": "en",
-          "speech": "Hey there, welcome to Ad Libs! All I need is a country, year, and color for a great story."
+          "speech": "Hey there, share some happiness in the world. All I need is a first name, last name and an amount in USD."
+        },
+        {
+          "type": 0,
+          "lang": "nl",
+          "speech": [
+            "Hallo!",
+            "Goedendag!"
+          ]
         }
       ],
-      "defaultResponsePlatforms": { "google": true },
+      "defaultResponsePlatforms": {
+        "google": true
+      },
       "speech": []
     }
   ],
   "priority": 500000,
   "webhookUsed": false,
   "webhookForSlotFilling": false,
-  "lastUpdate": 1534450913,
+  "lastUpdate": 1549013529,
   "fallbackIntent": false,
   "events": [
     {
