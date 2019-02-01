@@ -1,12 +1,11 @@
 {
   "description": "",
-  "language": "en",
+  "language": "nl",
   "disableInteractionLogs": false,
   "disableStackdriverLogs": true,
   "googleAssistant": {
-    "autoPreviewEnabled": true,
     "googleAssistantCompatible": true,
-    "project": "basic-slotfilling",
+    "project": "slotfillingtest-f4a81",
     "welcomeIntentSignInRequired": false,
     "startIntents": [],
     "systemIntents": [],
@@ -24,19 +23,21 @@
   },
   "defaultTimezone": "America/Los_Angeles",
   "webhook": {
-    "url": "https://us-central1-basic-slotfilling.cloudfunctions.net/dialogflowFirebaseFulfillment",
+    "url": "https://us-central1-slotfillingtest-f4a81.cloudfunctions.net/dialogflowFirebaseFulfillment",
     "headers": {
       "": ""
     },
     "available": true,
     "useForDomains": false,
-    "cloudFunctionsEnabled": true,
-    "cloudFunctionsInitialized": true
+    "cloudFunctionsEnabled": false,
+    "cloudFunctionsInitialized": false
   },
   "isPrivate": true,
   "customClassifierMode": "use.after",
   "mlMinConfidence": 0.3,
-  "supportedLanguages": [],
+  "supportedLanguages": [
+    "en"
+  ],
   "onePlatformApiVersion": "v2",
   "analyzeQueryTextSentiment": false,
   "enabledKnowledgeBaseNames": [],
