@@ -18,11 +18,13 @@ To create this agent from our template:
 3. Go to **Settings** ⚙ > **Export and Import** > **Restore from zip** using the `dialogflow-agent.zip` in this directory.
 4. `cd` to the `functions` directory
 5. Run `npm install`.
-6. Install the Firebase CLI by running `npm install -g firebase-tools`
+6. `cd ..` back to the project folder and install or update the Firebase CLI by running `npm install -g firebase-tools`
 7. Login with your Google account, `firebase login`
-8.  Add your project to the sample with `firebase use <project ID>`
-  + In Dialogflow console under **Settings** ⚙ > **General** tab > copy **Project ID**.
-9. Run `firebase deploy --only functions:dialogflowFulfillment`
+8. Add your project to the sample with `firebase init` if it hasn't been initialized in the previous step 
+  + select the Project ID of the Agent you created.
+  + find this in the Dialogflow console under **Settings** ⚙ > **General** tab > copy **Project ID**.
+  + when it asks to overwrite the existing folders choose No.
+9. Run `firebase deploy --only functions`
 10. Back in Dialogflow Console > **Fulfullment** > **Enable** Webhook.
 11. Paste the URL from the Firebase Console’s events column into the **URL** field > **Save**.
 
